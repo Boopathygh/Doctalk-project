@@ -2,6 +2,7 @@ services:
   - type: web
     name: doctalk-backend
     runtime: python
+    plan: free
     rootDir: backend
     buildCommand: "./build.sh"
     startCommand: "gunicorn doctalk.wsgi:application"
