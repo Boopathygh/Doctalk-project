@@ -21,8 +21,8 @@ services:
       - key: CORS_ALLOWED_ORIGINS
         value: "https://doctalk-frontend.onrender.com" # Will need to be updated manualy or use * for initial test
 
-staticSites:
-  - name: doctalk-frontend
+  - type: web
+    name: doctalk-frontend
     runtime: static
     rootDir: frontend
     buildCommand: "npm install && npm run build"
